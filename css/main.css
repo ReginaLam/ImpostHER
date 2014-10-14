@@ -80,6 +80,7 @@ nav img {
 
 .main-container {
 	display: block;
+	position: relative;
 	width: 100%;
 	background-color: #333;
 	margin: 0 auto;
@@ -91,6 +92,7 @@ nav img {
     position: relative;
     background-color: #fff;
     overflow: hidden;
+
 }
 .container-box-box {
 	opacity: .5;
@@ -102,8 +104,8 @@ nav img {
 }
 
 
-.container {
-	
+.row-1 .row-2 .row-3 {
+
 }
 
 section {
