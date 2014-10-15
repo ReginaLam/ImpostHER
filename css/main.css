@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: #d3d3d3;
+	/*background: #d3d3d3;*/
 	font-size: 2em;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-	height: 1000px;
+	height: 450px;
 	background-image: url("../images/skyscraper.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -31,25 +31,23 @@ header {
 }
 
 .header-text-title {
-	margin-top: 9em;
+	margin-top: 2em;
 	text-align: center;
 	color: #fff;
-	font-size: 3em;
+	font-size: 1em;
 	height: 50px;
 }
-.header-text-title img {
-	height: 1.5em;
-	width: 1.5em;
+.lt-red {
+	color: rgb(244, 89, 79);
 }
-
 .menu {
 	display: block;
 	position: absolute;
-	height: 4em;
+	height: 1.8em;
 	width: 100%;
 	background-color: rgba(245, 245, 245, .5);
-	padding: .5em;
-	top: 860px;
+	padding: .1em;
+	top: 400px;
 }
 @media (max-width: 700px) {
 	nav a {
@@ -60,35 +58,36 @@ header {
 }
 .menu-nav-links {
 	text-decoration: none;
-	font-size: 2em;
+	font-size: .6em;
 }
 
 
 nav a {
 	text-decoration: none;
-	margin: .5em 2em 1px 2em;
+	margin: .3em .5em .4em .3em;
 	color: #000;
 }
 
 .menu-nav-links a:hover {
-	border-bottom: 1px solid #f4594f;
+	border-bottom: 3px solid #f4594f;
 }
 nav img {
-	height: 2.3em;
-	width: 2.3em;
+	height: .8em;
+	width: .8em;
 }
 
 .main-container {
 	display: block;
 	position: relative;
 	width: 100%;
+	padding: 5px;
 	background-color: #333;
 	margin: 0 auto;
 }
 .container-box {
 	display: inline-block;
-	width: 600px;
-    height: 600px;
+	width: 300px;
+    height: 350px;
     position: relative;
     background-color: #fff;
     overflow: hidden;
@@ -104,12 +103,9 @@ nav img {
 }
 
 
-.row-1 .row-2 .row-3 {
 
-}
-
-section {
-	height: 40em;
+.sect-1 .sect-2 .sect-3 {
+	height: 700px;
 }
 .sect-1 {
 	background-color: #fff;
@@ -122,150 +118,27 @@ section {
 	background-color: #fff;
 }
 
+
+
 h3 {
-	display: block;
-	font-size: 3em;
-	margin-top: 4em;
+/*	display: block;*/
+	font-size: 1em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 	text-align: center;
-	visibility: hidden;
+/*	visibility: hidden;*/
 }
 
 .not-alone {
-	padding-top: 2em;
+	padding-top: 1em;
+	color: #fff;
 }
 
-/*
-==============================================
-slideLeft
-==============================================
-*/
-/*Why is this not working??  Also, the js file has code that is supposed to make it work as it scrolls.  That is not happening.*/
-
-.slideLeft{
-	animation-name: slideLeft;
-	-webkit-animation-name: slideLeft;	
-
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible;	
-}
-
-@keyframes slideLeft {
-	0% {
-		transform: translateX(150%);
-	}
-	50%{
-		transform: translateX(-8%);
-	}
-	65%{
-		transform: translateX(4%);
-	}
-	80%{
-		transform: translateX(-4%);
-	}
-	95%{
-		transform: translateX(2%);
-	}			
-	100% {
-		transform: translateX(0%);
-	}
-}
-
-@-webkit-keyframes slideLeft {
-	0% {
-		-webkit-transform: translateX(150%);
-	}
-	50%{
-		-webkit-transform: translateX(-8%);
-	}
-	65%{
-		-webkit-transform: translateX(4%);
-	}
-	80%{
-		-webkit-transform: translateX(-4%);
-	}
-	95%{
-		-webkit-transform: translateX(2%);
-	}			
-	100% {
-		-webkit-transform: translateX(0%);
-	}
-}
-/*
-==============================
-End slideLeft*/
-
-/*
-==============================================
-slideRight
-==============================================
-*/
-
-
-.slideRight{
-	animation-name: slideRight;
-	-webkit-animation-name: slideRight;	
-
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible;	
-}
-
-@keyframes slideRight {
-	0% {
-		transform: translateX(-150%);
-	}
-	50%{
-		transform: translateX(8%);
-	}
-	65%{
-		transform: translateX(-4%);
-	}
-	80%{
-		transform: translateX(4%);
-	}
-	95%{
-		transform: translateX(-2%);
-	}			
-	100% {
-		transform: translateX(0%);
-	}	
-}
-
-@-webkit-keyframes slideRight {
-	0% {
-		-webkit-transform: translateX(-150%);
-	}
-	50%{
-		-webkit-transform: translateX(8%);
-	}
-	65%{
-		-webkit-transform: translateX(-4%);
-	}
-	80%{
-		-webkit-transform: translateX(4%);
-	}
-	95%{
-		-webkit-transform: translateX(-2%);
-	}			
-	100% {
-		-webkit-transform: translateX(0%);
-	}
-}
-/*
-==============================
-End slideRight*/
 
 .boxes {
 	padding: 4em;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 .box {
@@ -282,6 +155,7 @@ End slideRight*/
 	height: auto;
 	overflow: hidden;
 }
+
 
 /**
  * Simple fade transition,
@@ -314,29 +188,52 @@ End slideRight*/
 /**
  * End fade transition.
  */
+.bio img {
+	display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.bio .glo-img {
+    height: 120px;
+    padding: none;
+}
+.bio .regina-img {
+    height: 90px;
+    margin-top: 20px;
+}
+
+.bio {
+	font-size: .6em;
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	padding-left: 5px;
+}
+.bio-container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#about {
+	height: 200px;
+}
+
 
 footer {
 	display: block;
-	height: 4em;
+	height: 2em;
 	width: 100%;
 	background-color: #F5F5F5;
-	font-size: 2em;
+	font-size: .5em;
+	clear: both;
 }
-footer img {
-	height: 2em;
-	width: 2em;
-	margin-top: 1em;
+.footer-logo {
+	font-size: 1em;
+	padding: 1em;
 }
 .copyright {
-	padding: 1.5em;
-}
-
-.clearfix:before, .clearfix:after { 
-	content: " "; 
-	display: table; 
-}
-.clearfix:after { 
-	clear: both; 
+	padding: 1em;
 }
 
 .float-left {
