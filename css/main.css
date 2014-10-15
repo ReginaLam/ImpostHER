@@ -105,7 +105,7 @@ nav img {
 
 
 .sect-1 .sect-2 .sect-3 {
-	height: 700px;
+	padding: 4em 1em;
 }
 .sect-1 {
 	background-color: #fff;
@@ -117,14 +117,21 @@ nav img {
 .sect-3 {
 	background-color: #fff;
 }
+@media only screen and (min-width: 900px)
+.section-wrapper {
+	margin: 0 auto;
+	max-width: 1300px;
+}
 
-
+/*.blinkred {
+color: #f4594f;
+animation: blink 1s steps(2, start) infinite;
+}*/
 
 h3 {
-/*	display: block;*/
+	display: block;
+	padding: 5em 0;
 	font-size: 1em;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
 	text-align: center;
 /*	visibility: hidden;*/
 }
@@ -157,37 +164,6 @@ h3 {
 }
 
 
-/**
- * Simple fade transition,
- */
-.mfp-fade.mfp-bg {
-	opacity: 0.001; /* Chrome opacity transition bug */
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
-}
-.mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
-}
-
-.mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
-}
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-}
-/**
- * End fade transition.
- */
 .bio img {
 	display: inline-block;
     position: relative;
@@ -230,10 +206,10 @@ footer {
 }
 .footer-logo {
 	font-size: 1em;
-	padding: 1em;
+	padding: .7em;
 }
 .copyright {
-	padding: 1em;
+	padding: .7em;
 }
 
 .float-left {
