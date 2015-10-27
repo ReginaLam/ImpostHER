@@ -1,4 +1,4 @@
-impostHER
+ImpostHER
 =========
 
 Overcome impostor syndrome.
